@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Quest+</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>✨ Code Quest+ ✨</h1>
+    <div class="player-stats">
+      <p><strong>👤 Dimitri</strong></p>
+      <p>HP: <span id="player-hp">100</span></p>
+      <p>Inventory: <span id="inventory">Empty</span></p>
+    </div>
+
+    <div class="enemy-stats">
+      <p><strong>🤖 Enemy: <span id="enemy-name">None</span></strong></p>
+      <p>HP: <span id="enemy-hp">0</span></p>
+    </div>
+
+    <div class="actions">
+      <button onclick="attack()">Attack ⚔️</button>
+      <button onclick="castSpell('fireball')">Fireball 🔥</button>
+      <button onclick="castSpell('heal')">Heal ❤️</button>
+      <button onclick="useItem()">Use Item 💰</button>
+    </div>
+
+    <div class="log" id="log"></div>
+
+    <div class="controls">
+      <button onclick="saveGame()">Save Game</button>
+      <button onclick="loadGame()">Load Game</button>
+      <button onclick="newEnemy()">Next Enemy 😈</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
